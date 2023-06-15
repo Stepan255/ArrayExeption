@@ -7,6 +7,13 @@ public class ArraySummer {
     private static final int FIRST_SIZE = 4;
     private static final int SECOND_SIZE = 4;
 
+    /**
+     *
+     * @param squareArray - square array 4X4
+     * @return sum of all array elements reduced to int
+     * @throws MyArraySizeException - an error in one of the sizes of a two-dimensional array
+     * @throws MyArrayDataException - error casting string to int
+     */
     public static int sum(String[][] squareArray) throws MyArraySizeException, MyArrayDataException {
         int columnSize = squareArray.length;
         if (columnSize != FIRST_SIZE) {
